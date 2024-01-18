@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>cn.kevin</groupId>
+  <groupId>cn.kevinwang</groupId>
   <artifactId>rateLimiter-kevinwang-springboot-starter</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
@@ -10,11 +10,77 @@
   <name>rateLimiter-kevinwang-springboot-starter</name>
   <url>http://maven.apache.org</url>
 
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.2.0</version>
+  </parent>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+    </license>
+  </licenses>
+
+
+
+  <scm>
+    <url>https://github.com/kevinWangSheng/rateLimiter-kevinwang-springboot-starter</url>
+    <connection>scm:git:https://github.com/kevinWangSheng/rateLimiter-kevinwang-springboot-starter.git</connection>
+    <developerConnection>scm:git:https://github.com/kevinWangSheng/rateLimiter-kevinwang-springboot-starter.git</developerConnection>
+  </scm>
+
+
+
+  <developers>
+    <developer>
+      <name>wangshenghui</name>
+      <email>ltwoggbuty2mh@gmail.com</email>
+      <url>https://github.com/kevinWangSheng/rateLimiter-kevinwang-springboot-starter</url>
+    </developer>
+  </developers>
+
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
   <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-autoconfigure</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-configuration-processor</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-aop</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>commons-beanutils</groupId>
+      <artifactId>commons-beanutils</artifactId>
+      <version>1.9.4</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>32.1.0-jre</version>
+    </dependency>
+    <dependency>
+      <groupId>cn.hutool</groupId>
+      <artifactId>hutool-all</artifactId>
+      <version>5.8.21</version>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

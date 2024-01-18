@@ -1,4 +1,4 @@
-package cn.kevin;
+package cn.kevinwang;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

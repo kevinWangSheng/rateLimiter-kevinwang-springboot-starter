@@ -1,4 +1,4 @@
-package cn.kevin;
+package cn.kevinwang;
 
 /**
  * Hello world!
